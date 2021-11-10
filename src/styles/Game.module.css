@@ -1,0 +1,249 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.gameContainer{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.initGame{
+    width: 90%;
+    height: 100vh;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1120px;
+
+    transition: all .5s;
+}
+
+.initGame section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.initGame section h2,h1{
+    font-size: 80px;
+    margin: 0px;
+    padding: 0px;
+
+    color: #0D594C;
+}
+
+.initGame section h1{
+    font-style: italic;
+    font-weight: bolder;
+
+    line-height: 80px;
+
+    margin-bottom: 70px;
+}
+
+.initGame button{
+    background-color: #0D8070;
+    color: #fff;
+    border: none;
+
+    padding: 10px 20px;
+    font-size: 35px;
+
+    border-radius: 28px;
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.initGame button:hover{
+    background: #0a6357;
+}
+
+
+.questionContainer{
+    width: 90%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1120px;
+
+    transition: all .5s;
+}
+
+.tittle{
+    font-size: 25px;
+    color: #0a6357;
+    font-weight: bold;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+    margin-top: 50px;
+
+    width: 100%;
+}
+
+
+
+.questions p, label{
+    color: #0a6357;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.questions label{
+    font-size: 1.2rem;
+}
+
+.questionsSection{
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.questionsSection section:first-child{
+    margin-top: 50px;
+    margin-bottom: 17px;
+
+}
+
+.questionsSection section{
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.questions button{
+    background-color: #0D8070;
+    color: #fff;
+    border: none;
+
+    padding: 10px 20px;
+    font-size: 1rem;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    margin-top: 50px;
+
+    transition: all .2s;
+}
+
+.questions button:hover{
+    background-color: #0c665a;
+}
+
+.selectAnswer{
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 10px;
+
+    border: 1px solid #0EA35D;
+
+    color: #0a6357;
+
+    transition: all .5s;
+}
+
+.hint p:first-child{
+    margin: 0px;
+}
+
+.hint p{
+    color: #C1C1C1;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 12px;
+
+}
+
+.dNone{
+    opacity: 0;
+    display: none;
+    transform: translateY(-100%);
+}
+
+.togglePage{
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.opacityNone{
+    opacity: 0;
+}
+
+.modalDeductionBackground{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    background: rgba(0, 0, 0, 0.479);
+
+    top: 0px;
+
+    transition: all .2s;
+}
+
+.modalDeductionContainer{
+    width: 50%;
+
+    position: relative;
+    border-radius: 10px;
+
+    background: #fafafa;
+
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all .2s;
+}
+
+.modalHeader{
+    border-bottom: 2px solid #0a6357;
+}
+
+.toggleModal{
+    opacity: 0;
+    transform: translateY(50%);
+}
