@@ -84,9 +84,9 @@ export function Game(){
                     </div>
                 </section>
 
-                <div onClick={() => modal++} className={openModal == 1 ? style.modalDeductionBackground : style.opacityNone}>
-                    <section onClick={() => modal++} className={openModal == 1 ? style.modalDeductionContainer : style.toggleModal}>
-                        <setion className={style.modalHeader}>
+                <div onClick={() => setOpenModal(0)} className={openModal == 1 ? style.modalDeductionBackground : style.opacityNone}>
+                    <section className={openModal == 1 ? style.modalDeductionContainer : style.toggleModal}>
+                        <setion  className={style.modalHeader}>
                             <p>{tittle}</p>
                         </setion>
                         <setion className={style.modalBody}></setion>

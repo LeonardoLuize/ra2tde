@@ -220,6 +220,7 @@
     top: 0px;
 
     transition: all .2s;
+    z-index: 1;
 }
 
 .modalDeductionContainer{
@@ -237,6 +238,8 @@
     justify-content: space-between;
 
     transition: all .2s;
+
+    z-index: 2;
 }
 
 .modalHeader{
