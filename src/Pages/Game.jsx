@@ -32,10 +32,6 @@ export function Game(){
         setOpenModal(2);
     }
 
-    function verifyTest(){
-
-    }
-
     return(
         <>
             <div className={style.container}>
